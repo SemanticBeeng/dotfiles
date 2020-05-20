@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-## ==== DEV-ENV
+## ================== DEV-ENV ==================
 
 # #todo duplicated from Ansible (could fix by making dotfiles as Ansible templates)
 export dev_usr_dir=/development/usr/bin
