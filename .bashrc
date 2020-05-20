@@ -118,7 +118,7 @@ fi
 
 ## ==== DEV-ENV
 
-# #todo duplicated from Ansible
+# #todo duplicated from Ansible (could fix by making dotfiles as Ansible templates)
 export dev_usr_dir=/development/usr/bin
 export jdk_name=jdk-11.0.7
 
