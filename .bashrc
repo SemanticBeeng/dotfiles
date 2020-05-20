@@ -115,3 +115,34 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+## ==== DEV-ENV
+
+# #todo duplicated from Ansible
+export dev_usr_dir=/development/usr/bin
+export jdk_name=jdk-11.0.7
+
+## Java
+export JAVA_HOME=$dev_usr_dir/$jdk_name
+export PATH=$JAVA_HOME/bin:$PATH
+
+## sbt
+export SBT_HOME=$dev_usr_dir/sbt
+export PATH=$SBT_HOME/bin:$PATH
+
+## Git
+export PATH=$dev_usr_dir/git/bin:$PATH
+
+## Minconda / Python
+export CONDA3_HOME=$dev_usr_dir/conda3/
+export PATH=$CONDA3_HOME/bin:$PATH:
+unset  PYTHONPATH
+
+##############################
+# Scala dev
+export COURSIER_CACHE=$dev_usr_dir/tmp/.coursier
+
+export BUILD_DIR=$dev_usr_dir/tmp/builddir
+export SBT_GLOBAL_SERVER_DIR=$BUILD_DIR
+export IVY_HOME=$SBT_GLOBAL_SERVER_DIR/.ivy2
+
