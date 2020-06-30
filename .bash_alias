@@ -1,0 +1,8 @@
+
+# source https://github.com/pajuna/dotfiles/blob/master/.bash_alias
+alias ll="ls -lAhF --group-directories-first --color"
+alias ls="ls --color"
+alias l="ls -lh"
+
+# alias pajuna='ANSIBLE_CONFIG=~/.ansible/ansible.cfg ansible-playbook -i ~/.ansible/inventory ~/.ansible/playbook.yml'
+
